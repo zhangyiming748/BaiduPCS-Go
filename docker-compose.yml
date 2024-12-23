@@ -1,12 +1,12 @@
 name: pan
 services:
     baidupcs-go:
-        stdin_open: true
-        tty: true
         container_name: pan
         environment:
-            - BDUSS=
-            - STOKEN=
+            - BDUSS=${你自己的BDUSS}
+            - STOKEN=${你自己的STOKEN}
         restart: unless-stopped
+        volumes:
+            - ./data:/data
         image: zhangyiming748/baidupcs-go:latest
         command: entrypoint.sh
