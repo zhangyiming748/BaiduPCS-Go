@@ -1,4 +1,4 @@
-#docker run -d --name pan -v ./data:/data --restart=unless-stopped zhangyiming748/baidupcs-go:latest
+#docker run -dit --name pan -v ./data:/data --restart=unless-stopped zhangyiming748/baidupcs-go:latest ash
 name: pan
 services:
     baidupcs-go:

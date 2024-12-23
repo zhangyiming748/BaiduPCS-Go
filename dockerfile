@@ -14,4 +14,4 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositorie
 
 COPY --from=builder /usr/local/bin/BaiduPCS /usr/local/bin/BaiduPCS
 
-ENTRYPOINT ["ash"]
+CMD ["ash"]
