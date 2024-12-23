@@ -1,0 +1,9 @@
+#docker run -d --name pan -v ./data:/data --restart=unless-stopped zhangyiming748/baidupcs-go:latest
+name: pan
+services:
+    baidupcs-go:
+        container_name: pan
+        volumes:
+            - ./data:/data
+        restart: unless-stopped
+        image: zhangyiming748/baidupcs-go:latest
